@@ -1,0 +1,31 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Worm Update",
+		"description": "Worm Update Resource Pack",
+		"uuid": "b4b11775-bea7-c0ef-d655-3e2fc672547f",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			16,
+			0
+		]
+	},
+	"metadata": {},
+	"modules": [
+		{
+			"description": "Worm Update",
+			"type": "resources",
+			"uuid": "cbd6ea1e-32bd-959f-c4dc-cac2e4eafa3c",
+			"version": [
+				1,
+				0,
+				2
+			]
+		}
+	]
+}

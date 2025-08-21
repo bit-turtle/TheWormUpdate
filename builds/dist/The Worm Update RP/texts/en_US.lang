@@ -1,0 +1,3 @@
+entity.worm:worm.name=Worm
+item.spawn_egg.entity.worm:worm.name=Spawn Worm
+item.worm:worm_meat=Worm Meat

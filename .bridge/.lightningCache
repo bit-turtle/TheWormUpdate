@@ -1,0 +1,39 @@
+$formatVersion: 1
+#unknown
+projects/Worm Update(1)/BP/pack_icon.png|1752853348156
+projects/Worm Update(1)/RP/pack_icon.png|1752853348686
+#manifest
+projects/Worm Update(1)/BP/manifest.json|1752884423349
+#functionTick
+projects/Worm Update(1)/BP/functions/tick.json|1755808412341
+#entity
+projects/Worm Update(1)/BP/entities/worm.behavior.json|1752853348242|{"identifier":["worm:worm"],"event":[],"componentGroup":[],"family":["worm"],"lootTablePath":["projects/Worm Update(1)/BP/loot_tables/worm.json"]}
+#item
+projects/Worm Update(1)/BP/items/worm_meat.item.json|1752853348285|{"identifier":["worm:worm_meat"],"tag":[]}
+#lootTable
+projects/Worm Update(1)/BP/loot_tables/worm.json|1752853348228|{"lootTablePath":[]}
+#clientManifest
+projects/Worm Update(1)/RP/manifest.json|1752884443284|{"uuid":["9c4bea07-9e55-44c6-80a9-e9323a255219"]}
+#clientSound
+projects/Worm Update(1)/RP/sounds.json|1752853348919|{"soundEvent":["ambient","death","hurt","plop","step"]}
+#clientAnimation
+projects/Worm Update(1)/RP/animations/worm.animation.json|1752853349037|{"identifier":["animation.worm.move"]}
+#texture
+projects/Worm Update(1)/RP/textures/entity/worm.png|1752853348660
+projects/Worm Update(1)/RP/textures/items/worm_meat.png|1752853348725
+#clientItem
+projects/Worm Update(1)/RP/items/worm_meat.item.json|1752853348950|{"identifier":["worm:worm_meat"],"itemTexture":["worm_meat"]}
+#clientLang
+projects/Worm Update(1)/RP/texts/en_US.lang|1752853349071|{"actionText":[]}
+#geometry
+projects/Worm Update(1)/RP/models/entity/worm.geo.json|1752853348968|{"identifier":["geometry.worm"],"bone":["root","bone1","bone2","bone3","bone4","bone5"]}
+#clientEntity
+projects/Worm Update(1)/RP/entity/worm.entity.json|1752853348972|{"identifier":["worm:worm"],"animationReference":["move"],"textureReference":["default"],"materialReference":["default"],"geometryReference":["default"],"animationIdentifier":["animation.worm.move"],"materialIdentifier":["entity_alphatest"],"geometryIdentifier":["geometry.worm"],"renderControllerIdentifier":["controller.render.default"],"texturePath":["projects/Worm Update(1)/RP/textures/entity/worm.png"]}
+#itemTexture
+projects/Worm Update(1)/RP/textures/item_texture.json|1752853349013|{"texture":["worm_meat"],"texturePath":["projects/Worm Update(1)/RP/textures/items/worm_meat.png"]}
+#bridgeConfig
+projects/Worm Update(1)/config.json|1755808792050
+#function
+projects/Worm Update(1)/BP/functions/worm/burrow.mcfunction|1755808400435|{"entityTag":[],"functionPath":[],"scoreboardObjective":[]}
+projects/Worm Update(1)/BP/functions/worm/timer.mcfunction|1755808400435|{"entityTag":[],"functionPath":["projects/Worm Update(1)/BP/functions/worm/burrow.mcfunction"],"scoreboardObjective":[]}
+projects/Worm Update(1)/BP/functions/worm/worm.mcfunction|1755808400435|{"entityTag":[],"functionPath":["projects/Worm Update(1)/BP/functions/worm/timer.mcfunction"],"scoreboardObjective":["worm_timer"]}

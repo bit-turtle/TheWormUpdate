@@ -1,0 +1,41 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "The Worm Update",
+		"description": "The Worm Update Behavior Pack",
+		"uuid": "3633450e-544a-4248-8fe8-83bc180a03fd",
+		"version": [
+			1,
+			1,
+			0
+		],
+		"min_engine_version": [
+			1,
+			20,
+			0
+		]
+	},
+	"metadata": {},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [
+				1,
+				1,
+				0
+			],
+			"uuid": "9a1ab40d-64cd-4021-921e-2bf6c47bb843",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "9c4bea07-9e55-44c6-80a9-e9323a255219",
+			"version": [
+				1,
+				1,
+				0
+			]
+		}
+	]
+}

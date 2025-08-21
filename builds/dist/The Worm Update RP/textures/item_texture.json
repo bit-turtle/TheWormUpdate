@@ -1,0 +1,9 @@
+{
+	"resource_pack_name": "worm",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"worm_meat": {
+			"textures": "textures/items/worm_meat"
+		}
+	}
+}
