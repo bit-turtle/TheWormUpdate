@@ -1,0 +1,34 @@
+{
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "worm:dirt_with_worm": {
+        "textures": "dirt_with_worm",
+        "sound": "grass"
+    },
+    "worm:grass_block_with_worm": {
+        "textures": {
+            "side": "grass_block_with_worm",
+            "up": "grass_carried_top",
+            "down": "grass_carried_bottom"
+        },
+        "sound": "grass"
+    },
+    "worm:mycelium_with_worm": {
+        "textures": {
+            "side": "mycelium_with_worm",
+            "up": "mycelium_top",
+            "down": "mycelium_bottom"
+        },
+        "sound": "grass"
+    },
+    "worm:podzol_with_worm": {
+        "textures": {
+            "side": "podzol_with_worm",
+            "up": "dirt_podzol_top",
+            "down": "dirt_podzol_bottom"
+        }
+    }
+}

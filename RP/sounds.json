@@ -3,17 +3,15 @@
 		"entities": {
 			"worm:worm": {
 				"events": {
-					"ambient": "mob.chicken.say",
-					"death": "mob.chicken.hurt",
-					"hurt": "mob.chicken.hurt",
-					"plop": "mob.chicken.plop",
-					"step": {
-						"pitch": 1,
-						"sound": "mob.chicken.step",
-						"volume": 0.25
-					}
+					"death": "mob.worm.death",
+					"hurt": "mob.worm.death",
+					"plop": "mob.worm.move",
+					"step": "mob.worm.move"
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [
+					0.8,
+					1.2
+				],
 				"volume": 1
 			}
 		}

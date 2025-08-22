@@ -1,31 +1,31 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "The Worm Update",
-		"description": "The Worm Update Resource Pack",
-		"uuid": "9c4bea07-9e55-44c6-80a9-e9323a255219",
+		"name": "Worm Update",
+		"description": "Worm Update Resource Pack",
+		"uuid": "b4b11775-bea7-c0ef-d655-3e2fc672547f",
 		"version": [
 			1,
-			1,
+			2,
 			0
 		],
 		"min_engine_version": [
 			1,
 			20,
-			0
+			30
 		]
 	},
-	"metadata": {},
 	"modules": [
 		{
 			"description": "Worm Update",
 			"type": "resources",
-			"uuid": "3d81021b-20fa-4ae8-b22b-28e79d3dfe63",
+			"uuid": "cbd6ea1e-32bd-959f-c4dc-cac2e4eafa3c",
 			"version": [
 				1,
-				1,
+				2,
 				0
 			]
 		}
-	]
+	],
+	"metadata": {}
 }

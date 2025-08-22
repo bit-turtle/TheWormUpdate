@@ -1,0 +1,2 @@
+say Burrowed!
+kill @s

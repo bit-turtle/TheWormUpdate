@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worm:mycelium_with_worm",
+			"menu_category": {
+				"category": "nature",
+				"group": "none",
+				"is_hidden_in_commands": false
+			}
+		},
+		"components": {
+			"minecraft:light_dampening": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mycelium_with_worm"
+				},
+				"up": {
+					"texture": "mycelium_top"
+				},
+				"down": {
+					"texture": "mycelium_bottom"
+				}
+			}
+		}
+	}
+}

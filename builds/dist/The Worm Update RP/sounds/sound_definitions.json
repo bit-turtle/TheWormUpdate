@@ -1,0 +1,17 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "mob.worm.death": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/worm_death"
+            ]
+        },
+        "mob.worm.move": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/worm_moving"
+            ]
+        }
+    }
+}

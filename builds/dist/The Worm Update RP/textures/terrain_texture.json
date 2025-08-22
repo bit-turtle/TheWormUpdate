@@ -1,0 +1,20 @@
+{
+    "texture_name": "atlas.terrain",
+    "resource_pack_name": "worm",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "dirt_with_worm": {
+            "textures": "textures/blocks/dirt_with_worm" // Link to an image file name
+        },
+        "grass_block_with_worm": {
+            "textures": "textures/blocks/grass_block_with_worm" // Link to an image file name
+        },
+        "mycelium_with_worm": {
+            "textures": "textures/blocks/mycelium_with_worm" // Link to an image file name
+        },
+        "podzol_with_worm": {
+            "textures": "textures/blocks/podzol_with_worm" // Link to an image file name
+        }
+    }
+}

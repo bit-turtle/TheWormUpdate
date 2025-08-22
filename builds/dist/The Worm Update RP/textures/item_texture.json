@@ -4,6 +4,9 @@
 	"texture_data": {
 		"worm_meat": {
 			"textures": "textures/items/worm_meat"
+		},
+		"rotten_apple": {
+			"textures": "textures/items/rotten_apple"
 		}
 	}
 }

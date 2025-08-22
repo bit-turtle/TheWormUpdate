@@ -1,17 +1,17 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "The Worm Update",
-		"description": "The Worm Update Behavior Pack",
-		"uuid": "3633450e-544a-4248-8fe8-83bc180a03fd",
+		"name": "Worm Update",
+		"description": "Worm Update Behavior Pack",
+		"uuid": "89926e6d-f937-ea59-61a2-16062c1c120d",
 		"version": [
 			1,
-			1,
+			2,
 			0
 		],
 		"min_engine_version": [
 			1,
-			20,
+			16,
 			0
 		]
 	},
@@ -21,19 +21,19 @@
 			"description": "Behavior",
 			"version": [
 				1,
-				1,
+				2,
 				0
 			],
-			"uuid": "9a1ab40d-64cd-4021-921e-2bf6c47bb843",
+			"uuid": "1573d094-27f5-67e9-7595-558a7152c3b7",
 			"type": "data"
 		}
 	],
 	"dependencies": [
 		{
-			"uuid": "9c4bea07-9e55-44c6-80a9-e9323a255219",
+			"uuid": "b4b11775-bea7-c0ef-d655-3e2fc672547f",
 			"version": [
 				1,
-				1,
+				2,
 				0
 			]
 		}
