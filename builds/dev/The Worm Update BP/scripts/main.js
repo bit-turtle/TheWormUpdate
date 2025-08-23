@@ -1,17 +1,5 @@
 import { world, system } from "@minecraft/server";
 
-const normal = new Map();
-normal.set("worm:grass_block_with_worm", "minecraft:grass_block");
-normal.set("worm:dirt_with_worm", "minecraft:dirt");
-normal.set("worm:mycelium_with_worm", "minecraft:mycelium");
-normal.set("worm:podzol_with_worm", "minecraft:podzol");
-
-const worm = new Map();
-worm.set("minecraft:grass_block", "worm:grass_block_with_worm");
-worm.set("minecraft:dirt", "worm:dirt_with_worm");
-worm.set("minecraft:mycelium", "worm:mycelium_with_worm");
-worm.set("minecraft:podzol", "worm:podzol_with_worm");
-
 const blocks = new Set([
     "minecraft:grass_block",
     "minecraft:dirt",
@@ -22,27 +10,50 @@ const blocks = new Set([
 // Worm Block custom component
 /** @type {import("@minecraft/server").BlockCustomComponent} */
 const WormBlock = {
-    // Worm leaves block when broken
+    // Worm leaves block when broken without silk touch
     onPlayerBreak(event) {
-        let location = event.block.location;
-        location.x += 0.5;
-        location.z += 0.5;
-        event.block.dimension.spawnEntity("worm:worm", location);
+        let silk_touch = 0;
+        try {
+            silk_touch = event.player
+                .getComponent("minecraft:equippable")
+                .getEquipmentSlot("Mainhand")
+                .getItem()
+                .getComponent("minecraft:enchantable")
+                .getEnchantment("silk_touch")
+                .value;
+        } catch (e) { /* Errors just mean it doesn't have silk touch */ }
+        if (silk_touch == 0) {
+            event.block.dimension.spawnEntity(
+                "worm:worm",
+                {
+                    x: event.block.location.x + 0.5,
+                    y: event.block.location.y,
+                    z: event.block.location.z + 0.5
+                }
+            );
+        }
     },
     // Worm block moves randomly
     onRandomTick(event) {
         // Choose target locaton
-        let location = event.block.location;
+        let block;
         let axis = Math.floor(Math.random() * 3);
         let direction = Math.round(Math.random()) * 2 - 1;
-        if (axis == 0) location.x += direction;
-        else if (axis == 1) location.y += direction;
-        else location.z += direction;
+        try {
+            if (axis == 0) block = event.block.above(direction);
+            else if (axis == 1) block = event.block.north(direction);
+            else if (axis == 2) block = event.block.west(direction);
+        } catch (e) { return; }
         // Try to move
-        let type = event.dimension.getBlock(location).type;
-        if (blocks.has(type)) {
-            event.dimension.setBlockType(location, worm.get(type));
-            event.block.setType(normal.get(event.block.type));
+        if (blocks.has(block.type.id)) {
+            event.block.dimension.runCommand(
+                "execute positioned " + block.location.x + " " + block.location.y + " " + block.location.z + " " +
+                "run function worm_block"
+            );
+            event.block.dimension.runCommand(
+                "execute positioned " + event.block.location.x + " " + event.block.location.y + " " + event.block.location.z + " " +
+                "run function worm_convert"
+            );
         }
     }
 };
