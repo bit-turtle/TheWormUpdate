@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "worm:rotten_apple"
+		},
+		"group": "handles",
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "worm:worm_meat"
+			},
+			{
+				"item": "minecraft:apple"
+			}
+		],
+		"unlock": [
+			{
+				"item": "worm:worm_meat"
+			}
+		],
+		"result": {
+			"item": "worm:rotten_apple"
+		}
+	}
+}

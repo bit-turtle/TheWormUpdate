@@ -1,1 +1,1 @@
-["projects/TheWormUpdate/BP/entities/worm.behavior.json","projects/TheWormUpdate/BP/functions/worm/burrow.mcfunction","projects/Worm Update-5/BP/recipes/rotten_apple.recipe.json"]
+["projects/TheWormUpdate/BP/scripts/main.js","projects/TheWormUpdate/BP/entities/worm.behavior.json","~local/projects/TheWormUpdate/BP/functions/worm_timer.mcfunction","~local/projects/TheWormUpdate/BP/scripts/main.js","~local/projects/TheWormUpdate/BP/manifest.json","projects/Worm Update-5/BP/recipes/rotten_apple.recipe.json"]

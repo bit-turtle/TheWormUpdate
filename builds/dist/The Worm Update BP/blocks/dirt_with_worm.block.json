@@ -10,6 +10,8 @@
 			}
 		},
 		"components": {
+			"worm:worm_block": {},
+			"minecraft:loot": "loot_tables/worm_dirt.json",
 			"minecraft:light_dampening": 0,
 			"minecraft:material_instances": {
 				"*": {

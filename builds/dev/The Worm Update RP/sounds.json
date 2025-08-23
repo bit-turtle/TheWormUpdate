@@ -1,0 +1,19 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"worm:worm": {
+				"events": {
+					"death": "mob.worm.death",
+					"hurt": "mob.worm.death",
+					"plop": "mob.worm.move",
+					"step": "mob.worm.move"
+				},
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"volume": 1
+			}
+		}
+	}
+}

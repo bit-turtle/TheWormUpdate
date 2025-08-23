@@ -1,0 +1,26 @@
+[
+    {
+        "atlas_tile": "dirt_with_worm",
+        "flipbook_texture": "textures/blocks/dirt_with_worm",
+        "ticks_per_frame": 1,
+        "blend_frames": false
+    },
+    {
+        "atlas_tile": "grass_block_with_worm",
+        "flipbook_texture": "textures/blocks/grass_block_with_worm",
+        "ticks_per_frame": 1,
+        "blend_frames": false
+    },
+    {
+        "atlas_tile": "mycelium_with_worm",
+        "flipbook_texture": "textures/blocks/mycelium_with_worm",
+        "ticks_per_frame": 1,
+        "blend_frames": false
+    },
+    {
+        "atlas_tile": "podzol_with_worm",
+        "flipbook_texture": "textures/blocks/podzol_with_worm",
+        "ticks_per_frame": 1,
+        "blend_frames": false
+    }
+]
